@@ -180,8 +180,8 @@ a {
   padding-bottom: 250px;
   height: 100vh;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vh));
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vh));
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 6vh), 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 6vh), 0 100%);
   z-index: 4;
 }
 
@@ -253,6 +253,27 @@ canvas.webgl {
 .skill-card img{
   width: auto !important;
   height: auto;
+}
+
+.experience-section{
+  margin-top: 250px;
+}
+.experience{
+  padding: 12px;
+}
+.experience-card :hover .experience {
+  border-radius: 4px;
+  background: #09f4ec26;
+}
+
+.skill-badge{
+  border-radius: 25%/50%;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 500;
+  width: fit-content;
+  color: #000c0a;
+  background: #03f5f52b;
 }
 
 
