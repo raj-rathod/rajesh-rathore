@@ -2,7 +2,7 @@
 name: Github Pages
 
 on:
- release:
+  release:
     types: [created]
 
   # Allows you to run this workflow manually from the Actions tab
