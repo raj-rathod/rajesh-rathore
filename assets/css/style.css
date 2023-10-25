@@ -276,6 +276,12 @@ canvas.webgl {
  background-color: #0969da;
 }
 
+.tag-badge{
+  font-size: 12px;
+  font-weight: 500;
+  color: #0969da;
+}
+
 .github-stats{
   margin-top: 100px;
   background: none;
@@ -292,6 +298,19 @@ canvas.webgl {
   background: #1f4c55;
 }
 
+.profile-image{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Typegraphy */
+.text-small{
+  font-size: 12px;
+}
+.text-smaller{
+  font-size: 10px;
+}
 
 @media (max-width: 64em) {
   canvas.webgl {
