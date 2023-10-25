@@ -4,14 +4,6 @@
 
 const canvas = document.getElementById('background-canvas');
 resizeCanvas();
-// const test = ()=>{
-//     fetch('https://dev.to/api/articles?username=rajrathod')
-//     .then((response) => response.json())
-//     .then(data => console.log(data))
-//     .catch((error) => console.log(error));
-// }
-// test();
-
 
 let config = {
     SIM_RESOLUTION: 128,
