@@ -137,7 +137,7 @@ a {
   margin: auto;
   margin-right: 0px;
   color: white;
-  line-height: 65px;
+  line-height: 59px;
   text-align: center;
   font-size: 23px;
   z-index: 9999;
@@ -156,11 +156,7 @@ a {
   margin: 10px auto;
   -webkit-transform: translateY(100px);
   transform: translateY(100px);
-}
 
-.navbar-brand {
-  color: #151515 !important;
-  font-weight: 500;
 }
 
 .fs-small {

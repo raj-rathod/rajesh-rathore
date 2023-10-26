@@ -18,7 +18,7 @@ const setBlogsData = (data) => {
     const blogData = data.slice(0,3);
     let blogs ='';
     blogData.forEach( (blog) => {
-        blogs += ` <div class="col-sm-4">
+        blogs += ` <div class="col-sm-4 mb-2">
         <div class="card experience-card-container h-100">
             <img src="${blog.cover_image}" class="card-img-top" alt="...">
             <div class="card-body">
@@ -58,9 +58,6 @@ const setBlogsData = (data) => {
     });
   
     blogSectionElement.innerHTML = blogs;
-    console.log(blogs);
 }
-
-
 
 getDevBlogs();
