@@ -39,11 +39,18 @@
     <link rel="icon" type="image/png"
         href="https://raj-rathod.github.io/rajesh-rathore/assets/images/rajesh-rathore.webp">
     <link rel="shortcut icon" href="https://raj-rathod.github.io/rajesh-rathore/assets/images/rajesh-rathore.webp">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="assets/css/style.css" rel="stylesheet">
-    <script defer src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
     <script defer src="assets/js/controller.js"></script>
     <script defer src="assets/js/blogs.js"></script>
+    <script defer src="assets/js/skills.js"></script>
+    <script defer src="assets/js/projects.js"></script>
+    <script defer src="assets/js/workexperience.js"></script>
+    <script defer src="assets/js/eventhandler.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-G4FM2CK5QD"></script>
     <script>
@@ -81,100 +88,26 @@
         </div>
     </div>
     <div class="skill-section container">
-        <div class="skill-card col-lg-9 col-11 p-3">
+        <div class="skill-card col-lg-9 col-11 p-md-4 p-3">
             <h3 class="text-center text-uppercase">Skills</h3>
-            <div class="row">
+            <div class="row mt-md-4 mt-2">
                 <div class="col-lg-6 col-12 mb-lg-3 mb-2">
-                    <h4>Languages</h4>
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white"
-                        alt="">
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
-                        alt="">
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
-                        alt="">
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
-                        alt="">
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
-                        alt="">
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
-                        alt="">
+                    <h5>Languages</h5>
+                    <div id="languageSkill"></div>
                 </div>
                 <div class="col-lg-6 col-12">
-                    <h4>Frameworks and libraries</h4>
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
-                        alt="">
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white"
-                        alt="">
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"
-                        alt="">
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white"
-                        alt="">
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/rxjs-%23B7178C.svg?style=for-the-badge&logo=reactivex&logoColor=white"
-                        alt="">
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white"
-                        alt="">
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"
-                        alt="">
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black"
-                        alt="">
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white"
-                        alt="">
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/chart.js-F5788D.svg?style=for-the-badge&logo=chart.js&logoColor=white"
-                        alt="">
+                    <h5>Frameworks and libraries</h5>
+                    <div id="frameworkSkill"></div>
                 </div>
             </div>
             <div class="row mt-lg-4 mt-2">
                 <div class="col-lg-6 col-12 mb-lg-3 mb-2">
-                    <h4> Development tools</h4>
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white"
-                        alt="">
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"
-                        alt="">
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
-                        alt="">
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/bitbucket-%230047B3.svg?style=for-the-badge&logo=bitbucket&logoColor=white"
-                        alt="">
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white"
-                        alt="">
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white"
-                        alt="">
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"
-                        alt="">
+                    <h5> Development tools</h5>
+                    <div id="developmentToolSkill"></div>
                 </div>
                 <div class="col-lg-6 col-12">
-                    <h4>Database</h4>
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white"
-                        alt="">
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"
-                        alt="">
-                    <img class="mb-lg-2 mb-1"
-                        src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white"
-                        alt="">
+                    <h5>Database</h5>
+                    <div id="databaseSkill"></div>
                 </div>
             </div>
         </div>
@@ -185,163 +118,18 @@
             <div class="col-md-6 col-sm-5">
                 <img class="img-fluid col-lg-9" src="assets/images/developer.gif" alt="Rajesh Rathore">
             </div>
-            <div class="col-md-6 col-sm-7 experience-card">
-                <div class="experience-card-container mt-lg-5 p-lg-3 p-2">
-                    <h5>
-                        Sr. Frontend Developer | <a href="https://www.stylework.city/" target="new">Stylework | Gurgaon
-                            | India</a>
-                    </h5>
-                    <p>
-                        March 2021 - Present
-                    </p>
-                    <p>
-                        I have actively contributed to the development and maintenance of web applications using Angular
-                        10+ and various frontend technologies. My role involved creating dynamic and responsive user
-                        interfaces by utilizing Angular components, directives, services, pipes, and modules.
-                        Collaboration with backend developers was integral to my work, as I ensured the seamless
-                        integration of REST APIs to maintain data consistency and security.
-                    </p>
+            <div class="col-md-6 col-sm-7 experience-card" id="workexperience">
 
-                    <div class="d-flex flex-wrap">
-                        <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                            Angular
-                        </div>
-                        <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                            TypeScript
-                        </div>
-                        <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                            JavaScript
-                        </div>
-                        <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                            HTML5
-                        </div>
-                        <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                            CSS | SCSS
-                        </div>
-                        <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                            Bootstrap
-                        </div>
-                        <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                            SSR | SEO
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         <h3 class="text-uppercase text-center my-lg-4 my-3">Projects</h3>
-        <div class="row experience-card">
-            <div class="col-sm-4 mb-3">
-                <div class="card experience-card-container h-100">
-                    <img src="assets/images/dsa-project.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <a href="https://raj-rathod.github.io/DSA-visualisation-in-angular/" target="new">DSA
-                                Visualization</a>
-                        </h5>
-                        <h6 class="card-subtitle mb-2 text-muted">January 2022 - Inprogress</h6>
-                        <p class="card-text">DSA Visualization is a project on data structures and algorithms. In this
-                            project all points of data structures and algorithms like as working approach, properties,
-                            operations, applications, advantages and disadvantages are well explained and visualize the
-                            operations for better understanding.</p>
-                        <div class="d-flex flex-wrap">
-                            <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                                Angular
-                            </div>
-                            <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                                TypeScript
-                            </div>
-                            <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                                PWA
-                            </div>
-                            <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                                DSA
-                            </div>
-                            <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                                Github
-                            </div>
-                            <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                                Github Action
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 mb-3">
-                <div class="card experience-card-container h-100">
-                    <img src="assets/images/dsa-npm-project.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <a href="https://raj-rathod.github.io/DSA-visualisation-in-angular/" target="new">DSA
-                                Visualization</a>
-                        </h5>
-                        <h6 class="card-subtitle mb-2 text-muted">January 2022 - Inprogress</h6>
-                        <p class="card-text">DSA Visualization is a project on data structures and algorithms. In this
-                            project all points of data structures and algorithms like as working approach, properties,
-                            operations, applications, advantages and disadvantages are well explained and visualize the
-                            operations for better understanding.</p>
-                        <div class="d-flex flex-wrap">
-                            <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                                Angular
-                            </div>
-                            <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                                TypeScript
-                            </div>
-                            <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                                PWA
-                            </div>
-                            <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                                DSA
-                            </div>
-                            <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                                Github
-                            </div>
-                            <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                                Github Action
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 mb-3">
-                <div class="card experience-card-container h-100">
-                    <img src="assets/images/calendar-project.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <a href="https://raj-rathod.github.io/Calendar_without_Third_Party_api/" target="new">The
-                                Custom Calendar</a>
-                        </h5>
-                        <h6 class="card-subtitle mb-2 text-muted">December 2021 - January 2022</h6>
-                        <p class="card-text">The Custom Calendar project is meticulously crafted without reliance on
-                            third-party libraries or external APIs. This standalone calendar offers a wide array of
-                            features to make your calendar experience different.
-
-                            One of its standout features is the robust search, which allows users to find the day of the
-                            week for any specific date</p>
-                        <div class="d-flex flex-wrap">
-                            <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                                Angular
-                            </div>
-                            <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                                TypeScript
-                            </div>
-                            <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                                Number Theory
-                            </div>
-                            <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                                Github
-                            </div>
-                            <div class="skill-badge me-md-3 me-2 mb-md-3 mb-2 rounded-pill">
-                                Github Action
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="row experience-card" id="projects">
         </div>
 
         <div class="d-flex justify-content-center mt-3">
-            <a class="text-uppercase fw-bold" href="https://github.com/raj-rathod?tab=repositories" target="new">More
-                Projects</a>
+            <div class="btn-hover color-8 text-uppercase" onclick="moreProjects()">
+                More Projects
+            </div>
         </div>
 
     </section>
@@ -379,13 +167,15 @@
             </div>
         </section>
     </section>
-  <!-- Dev blogs -->
+    <!-- Dev blogs -->
     <section class="container mt-md-5 mt-4">
-       <h3 class="text-center text-uppercase">Blogs</h3>
-       <div class="row my-4" id="blogSection"></div>
-       <div class="d-flex justify-content-center mt-3">
-        <a class="text-uppercase fw-bold" href="https://dev.to/rajrathod" target="new">More Blogs</a>
-    </div>
+        <h3 class="text-center text-uppercase">Blogs</h3>
+        <div class="row my-4" id="blogSection"></div>
+        <div class="d-flex justify-content-center mt-3">
+            <div class="btn-hover color-1 text-uppercase" onclick="moreBlogs()">
+                More Blogs
+            </div>
+        </div>
     </section>
 
 
@@ -404,9 +194,8 @@
                     data-size="large" aria-label="Sponsor @raj-rathod on GitHub">Sponsor</a>
             </div>
             <div class="float-element">
-                <a class="github-button" href="https://github.com/raj-rathod/rajesh-rathore"
-                    data-icon="octicon-star" data-size="large"
-                    aria-label="Star raj-rathod/DSA-visualisation-in-angular on GitHub">Star</a>
+                <a class="github-button" href="https://github.com/raj-rathod/rajesh-rathore" data-icon="octicon-star"
+                    data-size="large" aria-label="Star raj-rathod/DSA-visualisation-in-angular on GitHub">Star</a>
             </div>
             <div class="float-element">
                 <a class="github-button" href="https://github.com/raj-rathod/rajesh-rathore/discussions"
