@@ -434,3 +434,73 @@ canvas.webgl {
     height: 20px;
   }
 }
+
+/* animated footer */
+
+footer {
+  margin-top: 150px;
+  position: relative;
+  min-height: 100px;
+  background-color: #3586ff;
+  padding: 20px 0px;
+}
+
+footer .wave {
+  position: absolute;
+  top: -99px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background:url(../images/wave.png);
+  background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+   z-index: 1000;
+   opacity: 1;
+   bottom: 0;
+   animation: animateWaterWave 6s linear infinite;
+}
+footer .wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWaterWave2 6s linear infinite;
+}
+
+footer .wave#wave3 {
+  z-index: 999;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaterWave 5s linear infinite;
+}
+footer .wave#wave4 {
+ z-index: 999;
+ opacity: 0.7;
+ bottom: 20px;
+ animation: animateWaterWave2 5s linear infinite;
+}
+
+footer a{
+  color: white !important;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@keyframes animateWaterWave {
+  0%{
+     background-position-x: 1000px;
+  }
+  100%{
+    background-position-x: 0px;
+  }
+}
+@keyframes animateWaterWave2 {
+  0%{
+     background-position-x: 0px;
+  }
+  100%{
+    background-position-x: 1000px;
+  }
+}
+
