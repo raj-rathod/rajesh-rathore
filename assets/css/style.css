@@ -474,6 +474,9 @@ canvas.webgl {
     font-size: 12px;
     height: 45px;
   }
+  .top-section{
+    height: 90vh !important;
+  }
 }
 
 /* animated footer */
