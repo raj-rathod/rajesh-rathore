@@ -236,29 +236,30 @@ canvas.webgl {
   transform: translate(-50%, -50%);
   border-radius: 4px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(34, 36, 38, 0.1), 0 4px 20px 0 rgba(34, 36, 38, 0.25);
-    box-shadow: 0 4px 8px 0 rgba(34, 36, 38, 0.1), 0 4px 20px 0 rgba(34, 36, 38, 0.25);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    padding: 0;
+  box-shadow: 0 4px 8px 0 rgba(34, 36, 38, 0.1), 0 4px 20px 0 rgba(34, 36, 38, 0.25);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  padding: 0;
   background: #ffffff;
 }
-.skill-card img{
+
+.skill-card img {
   width: auto !important;
   height: auto;
 }
 
-.experience-section{
+.experience-section {
   margin-top: 250px;
 }
 
-.experience-card-container{
+.experience-card-container {
   background: #eff5f5;
   border-radius: 4px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(34, 36, 38, 0.1), 0 4px 20px 0 rgba(34, 36, 38, 0.25);
   box-shadow: 0 4px 8px 0 rgba(34, 36, 38, 0.1), 0 4px 20px 0 rgba(34, 36, 38, 0.25);
 }
 
-.skill-badge{
+.skill-badge {
   padding: 6px 14px;
   font-size: 12px;
   font-weight: 500;
@@ -266,19 +267,20 @@ canvas.webgl {
   color: #0969da;
   background: #ddf4ff;
 }
-.skill-badge:hover{
- cursor: pointer;
- color: #ffff;
- background-color: #0969da;
+
+.skill-badge:hover {
+  cursor: pointer;
+  color: #ffff;
+  background-color: #0969da;
 }
 
-.tag-badge{
+.tag-badge {
   font-size: 12px;
   font-weight: 500;
   color: #0969da;
 }
 
-.github-stats{
+.github-stats {
   margin-top: 100px;
   background: none;
   position: relative;
@@ -294,17 +296,18 @@ canvas.webgl {
   background: #1f4c55;
 }
 
-.profile-image{
+.profile-image {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
 
 /* Typegraphy */
-.text-small{
+.text-small {
   font-size: 12px;
 }
-.text-smaller{
+
+.text-smaller {
   font-size: 10px;
 }
 
@@ -345,44 +348,55 @@ canvas.webgl {
   background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
   box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }
+
 .btn-hover.color-2 {
   background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
   box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
 }
+
 .btn-hover.color-3 {
   background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
   box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
 }
+
 .btn-hover.color-4 {
   background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
   box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
 }
+
 .btn-hover.color-5 {
   background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
   box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
 }
+
 .btn-hover.color-6 {
   background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
   box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
 }
+
 .btn-hover.color-7 {
   background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
   box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
 }
+
 .btn-hover.color-8 {
   background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
   box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
 }
+
 .btn-hover.color-9 {
   background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
   box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
+
 .btn-hover.color-10 {
-      background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+  background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a, #FBB03B);
   box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
 }
+
 .btn-hover.color-11 {
-     background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+  background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);
+  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
 }
 
 
@@ -400,11 +414,27 @@ canvas.webgl {
   }
 
   .overlay-section {
-    margin-top: 80px;
+    margin-top: 60px;
   }
 }
 
 @media(max-width:767px) {
+  p {
+    font-size: 0.75rem !important;
+  }
+
+  h3 {
+    font-size: 1rem !important;
+  }
+
+  h5 {
+    font-size: 0.875rem !important;
+  }
+
+  h6 {
+    font-size: 0.65rem;
+  }
+
   .overlay-section {
     margin-top: 50px;
   }
@@ -429,9 +459,20 @@ canvas.webgl {
   .floating-container .floating-button {
     margin-right: 0px !important;
   }
-  .skill-card img{
+
+  .skill-card img {
     width: auto !important;
     height: 20px;
+  }
+
+  .skill-badge {
+    font-size: 9px !important;
+  }
+
+  .btn-hover {
+    width: 150px;
+    font-size: 12px;
+    height: 45px;
   }
 }
 
@@ -451,16 +492,17 @@ footer .wave {
   left: 0;
   width: 100%;
   height: 100px;
-  background:url(../images/wave.png);
+  background: url(../images/wave.png);
   background-size: 1000px 100px;
 }
 
 footer .wave#wave1 {
-   z-index: 1000;
-   opacity: 1;
-   bottom: 0;
-   animation: animateWaterWave 6s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaterWave 6s linear infinite;
 }
+
 footer .wave#wave2 {
   z-index: 999;
   opacity: 0.5;
@@ -474,33 +516,36 @@ footer .wave#wave3 {
   bottom: 15px;
   animation: animateWaterWave 5s linear infinite;
 }
+
 footer .wave#wave4 {
- z-index: 999;
- opacity: 0.7;
- bottom: 20px;
- animation: animateWaterWave2 5s linear infinite;
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWaterWave2 5s linear infinite;
 }
 
-footer a{
+footer a {
   color: white !important;
   font-size: 14px;
   font-weight: 500;
 }
 
 @keyframes animateWaterWave {
-  0%{
-     background-position-x: 1000px;
+  0% {
+    background-position-x: 1000px;
   }
-  100%{
+
+  100% {
     background-position-x: 0px;
   }
 }
+
 @keyframes animateWaterWave2 {
-  0%{
-     background-position-x: 0px;
+  0% {
+    background-position-x: 0px;
   }
-  100%{
+
+  100% {
     background-position-x: 1000px;
   }
 }
-
