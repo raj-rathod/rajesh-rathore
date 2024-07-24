@@ -1,12 +1,12 @@
 const workexperiences = [
     {
-        position: 'Sr. Frontend Developer',
+        position: 'Full Stack Developer',
         companyNameAndLoaction: 'Stylework | Gurgaon | India',
         url: 'https://www.stylework.city/',
         startDate: 'March 2021',
         endDate: 'Present',
         description: 'I have actively contributed to the development and maintenance of web applications using Angular 10+ and various frontend technologies. My role involved creating dynamic and responsive user interfaces by utilizing Angular components, directives, services, pipes, and modules. Collaboration with backend developers was integral to my work, as I ensured the seamless integration of REST APIs to maintain data consistency and security.',
-        skills: ['Angular', 'TypeScript', 'JavaScript', 'Bootstrap', 'Html', 'CSS|SCSS', 'SSR|SEO', 'REST Api'],
+        skills: ['Angular', 'TypeScript', 'JavaScript', 'Bootstrap | Tailwind', 'Html', 'CSS | SCSS', 'SSR | SEO', 'REST Api','LoopBack4','MongoDB','Node.JS'],
 
     }
 ]
